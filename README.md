@@ -1,5 +1,5 @@
-# Grafana with Nginx in containers
+# Grafana with Nginx in docker containers
 Grafana and inginx in docer conatainers  
 Functions:  
-     -LDAP Authorisation  
-     -Voluem for grafan db and plugins
+  -LDAP Authorisation  
+  -Voluem for grafana db and plugins
