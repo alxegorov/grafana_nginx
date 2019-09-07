@@ -1,0 +1,14 @@
+nginx:
+  restart: unless-stopped
+  build: ./nginx
+  links:
+    - grafana:graf
+  ports:
+    - "80:80"
+
+grafana:
+  restart: unless-stopped
+  build: ./grafana
+  hostname: grafana
+  expose:
+    - 3000
