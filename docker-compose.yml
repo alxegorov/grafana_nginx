@@ -9,6 +9,8 @@ nginx:
 grafana:
   restart: unless-stopped
   build: ./grafana
+  volumes:
+    - grafana-storage:/var/lib/grafana
   hostname: grafana
   expose:
     - 3000
